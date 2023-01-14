@@ -1,0 +1,85 @@
+body {
+  padding: 10px;
+}
+.carousel {
+	
+  position: relative;
+  width: 974px;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+      margin: 0 auto;
+    height: 200px;
+    background-color: #585858;
+    border-radius: 10px 0 10px 10px;
+    overflow: auto;
+    border: 1px solid #848480;
+
+}
+
+.carousel img {
+ width: 124px;
+    height: 175px;
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
+  border: 3px solid #888;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+  top:80px;
+}
+
+.next {
+  right: 7px;
+   top:80px;
+}
+
+.gallery {
+	margin-left:35px;
+  width: 830px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  width: 9999px;
+height: 175px;
+    margin-left: 30;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+  width: 124px;
+    height: 175px;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 1px;
+}
